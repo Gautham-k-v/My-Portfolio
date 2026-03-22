@@ -1,56 +1,81 @@
-body{
-    font-family: 'Courier New', Courier, monospace;
+body {
+  font-family: "Courier New", Courier, monospace;
 }
-    /* first section styles  */
+/* first section styles  */
 /* First section my own image style  */
-.my-img{
-    height: 100px;
-    width: 100px;
-    border-radius: 100%;
+.my-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  margin-top: 80px;
 }
 /* button for contact  */
-.button-contactme{
-    background: linear-gradient(45deg, rgb(220, 20, 210), rgb(219, 98, 34));
-    height: 40px;
-    width: 150px;
-    border-radius: 40px;
-    color: white;
+.button-contactme {
+  background: linear-gradient(45deg, rgb(220, 20, 210), rgb(219, 98, 34));
+  height: 40px;
+  width: 150px;
+  border-radius: 40px;
+  color: white;
 }
 /* Button for resume download */
-.button-resume{
-    height: 40px;
-    width: 150px;
-    border-radius: 40px;
-    color: black;
+.button-resume {
+  height: 40px;
+  width: 150px;
+  border-radius: 40px;
+  color: black;
 }
 /* about section css  */
-.about-section{
-    background-color: rgba(240, 236, 236, 0.851);
-    padding: 1.25rem;
-    border-radius: 10px;
-    margin-top: 1.25rem;
-    margin-left: 1.875rem;
-    width: 280px;
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 40px;
+
+  /* Center the whole grid */
+  max-width: 800px;   /* controls overall width */
+  margin: 7px auto;      /* equal left & right spacing */
+
+  /* Center items inside each grid cell */
+  justify-items: center;
+}
+@media (max-width: 767px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
+.my-img-about {
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+}
+.about-section {
+  background-color: rgba(240, 236, 236, 0.851);
+  padding: 1.25rem;
+  border-radius: 10px;
+  margin-top: 1.25rem;
+  margin-left: 1.875rem;
+  width: 280px;
 }
 /* for the about section cards  */
-.about-card{
-    background-color: rgb(246, 246, 246);
-    padding: 1.25rem;
-    border-radius: 20px;
-    margin-top: 1.25rem;
-    margin-left: 1.875rem;
-    width: 278px;
-    height: 240px;
+.about-card {
+  background-color: rgb(246, 246, 246);
+  padding: 1.25rem;
+  border-radius: 20px;
+  margin-top: 1.25rem;
+  margin-left: 0.875rem;
+  width: 278px;
+  height: 240px;
 }
-.about-card:hover{
-    background-color: rgb(227, 225, 225);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    transform: translateY(-10px);
-    transition: all 0.5s ease;
+.about-card:hover {
+  background-color: rgb(227, 225, 225);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+  transition: all 0.5s ease;
 }
 /* skills section bg color  */
-.skills{
-    background: #c9c8c8;
-    height: 450px;
-    width: 320px;
+.skills {
+  background: #c9c8c8;
+  height: 450px;
+  width: 320px;
+
 }
