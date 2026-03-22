@@ -1,81 +1,137 @@
 body {
-  font-family: "Courier New", Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
 }
+
+a {
+    text-decoration: inherit;
+}
+
+/* navbar section */
+
+.navbar:has(> a) {
+    padding: 50px;
+    transition: all 0.5s ease;
+}
+
+/* navbar section ends */
+
 /* first section styles  */
 /* First section my own image style  */
 .my-img {
-  height: 100px;
-  width: 100px;
-  border-radius: 100%;
-  margin-top: 80px;
+    height: 150px;
+    border-radius: 100%;
+    margin-top: 80px;
 }
 /* button for contact  */
 .button-contactme {
-  background: linear-gradient(45deg, rgb(220, 20, 210), rgb(219, 98, 34));
-  height: 40px;
-  width: 150px;
-  border-radius: 40px;
-  color: white;
+    background: linear-gradient(45deg, rgb(220, 20, 210), rgb(219, 98, 34));
+    height: 40px;
+    width: 150px;
+    border-radius: 40px;
+    color: white;
 }
 /* Button for resume download */
 .button-resume {
-  height: 40px;
-  width: 150px;
-  border-radius: 40px;
-  color: black;
+    height: 40px;
+    width: 150px;
+    border-radius: 40px;
+    color: black;
 }
 /* about section css  */
 
 .about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 40px;
 
-  /* Center the whole grid */
-  max-width: 800px;   /* controls overall width */
-  margin: 7px auto;      /* equal left & right spacing */
+    /* Center the whole grid */
+    max-width: 800px; /* controls overall width */
+    margin: 7px auto; /* equal left & right spacing */
 
-  /* Center items inside each grid cell */
-  justify-items: center;
+    /* Center items inside each grid cell */
+    justify-items: center;
 }
 @media (max-width: 767px) {
-  .about {
-    grid-template-columns: 1fr;
-  }
+    .about {
+        grid-template-columns: 1fr;
+    }
 }
 .my-img-about {
-  height: 250px;
-  width: 250px;
-  border-radius: 100%;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
 }
 .about-section {
-  background-color: rgba(240, 236, 236, 0.851);
-  padding: 1.25rem;
-  border-radius: 10px;
-  margin-top: 1.25rem;
-  margin-left: 1.875rem;
-  width: 280px;
+    background-color: rgba(240, 236, 236, 0.851);
+    padding: 1.25rem;
+    border-radius: 10px;
+    margin-top: 1.25rem;
+    margin-left: 1.875rem;
+    width: 280px;
 }
 /* for the about section cards  */
 .about-card {
-  background-color: rgb(246, 246, 246);
-  padding: 1.25rem;
-  border-radius: 20px;
-  margin-top: 1.25rem;
-  margin-left: 0.875rem;
-  width: 278px;
-  height: 240px;
+    background-color: rgb(246, 246, 246);
+    padding: 1.25rem;
+    border-radius: 20px;
+    margin-top: 1.25rem;
+    margin-left: 0.875rem;
+    width: 278px;
+    height: 240px;
+    transition: all 0.5s ease;
+    user-select: none;
 }
 .about-card:hover {
-  background-color: rgb(227, 225, 225);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  transform: translateY(-10px);
-  transition: all 0.5s ease;
+    background-color: rgb(227, 225, 225);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+    transition: all 0.5s ease;
 }
 /* skills section bg color  */
 .skills {
-  background: #c9c8c8;
-  height: 450px;
-  width: 320px;
+    background: #c9c8c8;
+    height: auto;
+    padding:20px;
+    width: 320px;
+}
 
+.navbar-brand {
+    display: flex;
+    position: absolute;
+}
+
+.progress {
+    display:flex;
+    height:30px;
+    border-radius: 100px;
+    font-weight:bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* buttons */
+
+.btn {
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    transition:all ease 0.5s;
+    font-weight: bold;
+}
+
+/* buttons end */
+
+/* span section */
+
+span {
+    padding-right:10px;
+}
+
+/* span section ends */
+
+/* footer section */
+
+.footer {
+    padding:50px;
 }
